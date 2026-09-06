@@ -28,5 +28,11 @@
             <p><b>Seblak Gahoel</b> didirikan dengan semangat menghadirkan inovasi kuliner tradisional Sunda yang dikemas secara modern dan kekinian. Berawal dari kecintaan terhadap kuliner pedas beraroma kencur, Seblak Gahoel berkembang pesat dengan menyajikan puluhan jenis kerupuk pilihan, varian suki premium, seafood segar, karedok, hingga saus karamel spesial yang menjadi ciri khas utama kami di lidah para pecinta kuliner.</p>
         </div>
     </div>
+
+    <footer>
+    <p>&copy; 2026 Seblak Gahoel. All rights reserved.</p>
+    <p>Jam Buka: Senin - Sabtu (09.00 - 20.30) | Minggu: Tutup</p>
+</footer>
+
 </body>
 </html>
