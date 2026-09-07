@@ -128,8 +128,10 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo Seblak Gahoel">
-        <h1>Seblak Gahoel</h1>
+        <div class="header-brand">
+            <img src="logo.jpg" alt="Logo Seblak Gahoel" class="logo-img">
+            <h1>Seblak Gahoel</h1>
+        </div>
     </header>
     
     <nav>
