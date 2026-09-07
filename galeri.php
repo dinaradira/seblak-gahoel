@@ -3,7 +3,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Galeri & Testimoni - Seblak Gahoel</title>
+    <title>Galeri - Seblak Gahoel</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .gallery-container {
@@ -24,7 +24,6 @@
             color: #ccc;
             font-size: 15px;
         }
-        /* Grid 10 Foto Modern & Estetik */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -74,6 +73,7 @@
             border-radius: 6px;
             backdrop-filter: blur(4px);
             border: 1px solid rgba(255, 202, 40, 0.3);
+            z-index: 2;
         }
         .gallery-desc {
             padding: 18px;
@@ -94,8 +94,6 @@
             font-size: 13px;
             line-height: 1.4;
         }
-        
-        /* Modal Lightbox untuk Zoom Foto */
         .modal {
             display: none;
             position: fixed;
@@ -134,7 +132,7 @@
         <h1>Seblak Gahoel</h1>
     </header>
     
-   <nav>
+    <nav>
         <a href="index.php">Beranda</a>
         <a href="galeri.php">Galeri</a>
         <a href="pesan.php">Pesan Sekarang</a>
@@ -148,186 +146,44 @@
                 <p>Intip keseruan kedai kami, racikan bumbu khas, hingga momen bahagia para pelanggan setia!</p>
             </div>
 
-            <!-- Grid 10 Foto Estetik -->
+            <!-- Grid 12 Foto -->
             <div class="gallery-grid">
-                <!-- Foto 1 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Suasana</span>
-                        <img src="img/galeri1.jpg" alt="Kedai" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Suasana Kedai Utama</h4>
-                            <p>Ramai dikunjungi pencinta seblak setiap hari.</p>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                // Daftar 12 data foto dan keterangan galeri
+                $galeri_data = [
+                    ["img" => "img/galeri1.jpg", "badge" => "Suasana", "judul" => "Suasana Kedai Utama", "desc" => "Ramai dikunjungi pencinta seblak setiap hari."],
+                    ["img" => "img/galeri2.jpg", "badge" => "Menu Andalan", "judul" => "Seblak Kuah Pedas Komplit", "desc" => "Topping melimpah dengan kuah merah membara."],
+                    ["img" => "img/galeri3.jpg", "badge" => "Testimoni", "judul" => "Pelanggan Setia Level 5", "desc" => "\"Pedasnya bikin ketagihan, nggak pernah bosan!\""],
+                    ["img" => "img/galeri4.jpg", "badge" => "Legendaris", "judul" => "Cilok Buatan Rumah", "desc" => "Resep rahasia turun-temurun sejak 15 tahun lalu."],
+                    ["img" => "img/galeri5.jpg", "badge" => "Spesial", "judul" => "Karedok Segar Autentik", "desc" => "Sayuran segar pilihan dengan bumbu kacang kental."],
+                    ["img" => "img/galeri6.jpg", "badge" => "Dapur", "judul" => "Proses Peracikan Fresh", "desc" => "Dimasak langsung mendadak sesuai pesanan."],
+                    ["img" => "img/galeri7.jpg", "badge" => "Testimoni", "judul" => "Seru-seruan Bareng Sahabat", "desc" => "\"Tempat nongkrong kuliner pedas paling hits!\""],
+                    ["img" => "img/galeri8.jpg", "badge" => "Varian", "judul" => "Aneka Kerupuk Unik", "desc" => "Pilihan kerupuk renyah terlengkap se-kota."],
+                    ["img" => "img/galeri9.jpg", "badge" => "Suasana", "judul" => "Suasana Malam Gahoel", "desc" => "Selalu ramai dipadati pemburu kuliner malam."],
+                    ["img" => "img/galeri10.jpg", "badge" => "Signature", "judul" => "Sajian Karamel Spesial", "desc" => "Sentuhan rasa manis gurih penutup yang pas."],
+                    ["img" => "img/galeri11.jpg", "badge" => "Dokumentasi", "judul" => "Keseruan Tim Dapur", "desc" => "Kompak menyajikan rasa terbaik untuk pelanggan."],
+                    ["img" => "img/galeri12.jpg", "badge" => "Favorit", "judul" => "Paket Spesial Gahoel", "desc" => "Porsi puas harga pas untuk dinikmati bersama."]
+                ];
 
-                <!-- Foto 2 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Menu Andalan</span>
-                        <img src="img/galeri2.jpg" alt="Seblak Komplit" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Seblak Kuah Pedas Komplit</h4>
-                            <p>Topping melimpah dengan kuah merah membara.</p>
+                foreach($galeri_data as $g) {
+                    echo '
+                    <div class="gallery-card">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-badge">'.$g['badge'].'</span>
+                            <img src="'.$g['img'].'" alt="'.$g['judul'].'" onclick="openModal(this.src)">
                         </div>
-                    </div>
-                </div>
-
-                <!-- Foto 3 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Testimoni</span>
-                        <img src="img/galeri3.jpg" alt="Pelanggan" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Pelanggan Setia Level 5</h4>
-                            <p>"Pedasnya bikin ketagihan, nggak pernah bosan!"</p>
+                        <div class="gallery-desc">
+                            <h4>'.$g['judul'].'</h4>
+                            <p>'.$g['desc'].'</p>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Foto 4 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Legendaris</span>
-                        <img src="img/galeri4.jpg" alt="Cilok" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Cilok Buatan Rumah</h4>
-                            <p>Resep rahasia turun-temurun sejak 15 tahun lalu.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 5 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Spesial</span>
-                        <img src="img/galeri5.jpg" alt="Karedok" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Karedok Segar Autentik</h4>
-                            <p>Sayuran segar pilihan dengan bumbu kacang kental.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 6 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Dapur</span>
-                        <img src="img/galeri6.jpg" alt="Proses Masak" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Proses Peracikan Fresh</h4>
-                            <p>Dimasak langsung mendadak sesuai pesanan.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 7 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Testimoni</span>
-                        <img src="img/galeri7.jpg" alt="Review" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Seru-seruan Bareng Sahabat</h4>
-                            <p>"Tempat nongkrong kuliner pedas paling hits!"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 8 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Varian</span>
-                        <img src="img/galeri8.jpg" alt="Topping" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Aneka Kerupuk Unik</h4>
-                            <p>Pilihan kerupuk renyah terlengkap se-kota.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 9 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Suasana</span>
-                        <img src="img/galeri9.jpg" alt="Suasana Malam" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Suasana Malam Gahoel</h4>
-                            <p>Selalu ramai dipadati pemburu kuliner malam.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 10 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Signature</span>
-                        <img src="img/galeri10.jpg" alt="Karamel" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Sajian Karamel Spesial</h4>
-                            <p>Sentuhan rasa manis gurih penutup yang pas.</p>
-                        </div>
-                    </div>
-                </div>
+                    </div>';
+                }
+                ?>
             </div>
         </div>
     </div>
 
-    <!-- Foto 10 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Signature</span>
-                        <img src="img/galeri11.jpg" alt="Karamel" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Sajian Karamel Spesial</h4>
-                            <p>Sentuhan rasa manis gurih penutup yang pas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>                                  
-
-    <!-- Foto 10 -->
-                <div class="gallery-card">
-                    <div class="gallery-img-wrap">
-                        <span class="gallery-badge">Signature</span>
-                        <img src="img/galeri12.jpg" alt="Karamel" onclick="openModal(this.src)">
-                    </div>
-                    <div class="gallery-desc">
-                        <div>
-                            <h4>Sajian Karamel Spesial</h4>
-                            <p>Sentuhan rasa manis gurih penutup yang pas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Elemen Modal Lightbox (Zoom Foto) -->
+    <!-- Modal Lightbox (Zoom Foto) -->
     <div id="imgModal" class="modal" onclick="closeModal()">
         <span class="modal-close">&times;</span>
         <img id="modalImage" src="">
