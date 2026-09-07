@@ -134,7 +134,6 @@
         <h1>Seblak Gahoel</h1>
     </header>
     
-    <!-- Navigasi sudah diganti jadi Galeri -->
    <nav>
         <a href="index.php">Beranda</a>
         <a href="galeri.php">Galeri</a>
@@ -282,6 +281,40 @@
                     <div class="gallery-img-wrap">
                         <span class="gallery-badge">Signature</span>
                         <img src="img/galeri10.jpg" alt="Karamel" onclick="openModal(this.src)">
+                    </div>
+                    <div class="gallery-desc">
+                        <div>
+                            <h4>Sajian Karamel Spesial</h4>
+                            <p>Sentuhan rasa manis gurih penutup yang pas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foto 10 -->
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <span class="gallery-badge">Signature</span>
+                        <img src="img/galeri11.jpg" alt="Karamel" onclick="openModal(this.src)">
+                    </div>
+                    <div class="gallery-desc">
+                        <div>
+                            <h4>Sajian Karamel Spesial</h4>
+                            <p>Sentuhan rasa manis gurih penutup yang pas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                                  
+
+    <!-- Foto 10 -->
+                <div class="gallery-card">
+                    <div class="gallery-img-wrap">
+                        <span class="gallery-badge">Signature</span>
+                        <img src="img/galeri12.jpg" alt="Karamel" onclick="openModal(this.src)">
                     </div>
                     <div class="gallery-desc">
                         <div>

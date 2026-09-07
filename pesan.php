@@ -59,9 +59,9 @@ $pemesan = isset($_GET['pemesan']) ? $_GET['pemesan'] : '';
         <h1>Seblak Gahoel</h1>
     </header>
     
-    <nav>
+   <nav>
         <a href="index.php">Beranda</a>
-        <a href="menu.php">Menu & Varian</a>
+        <a href="galeri.php">Galeri</a>
         <a href="pesan.php">Pesan Sekarang</a>
         <a href="alamat.php">Alamat & Kontak</a>
     </nav>
