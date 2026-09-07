@@ -68,7 +68,7 @@
                 <a href="https://wa.me/6281234567890?text=Halo%20Seblak%20Gahoel,%20saya%20mau%20pesan" target="_blank" class="btn-wa">
                     💬 Chat WhatsApp
                 </a>
-                <a href="https://instagram.com/seblak_gahoel_official" target="_blank" class="btn-ig">
+                <a href="https://www.instagram.com/seblakgahoelbaleendah?stkn=c2x4ZzJ4bDZmbW1n" target="_blank" class="btn-ig">
                     📸 Kunjungi Instagram
                 </a>
             </div>
