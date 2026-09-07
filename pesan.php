@@ -55,10 +55,11 @@ $pemesan = isset($_GET['pemesan']) ? $_GET['pemesan'] : '';
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo Seblak Gahoel">
-        <h1>Seblak Gahoel</h1>
+        <div class="header-brand">
+            <img src="logo.jpg" alt="Logo Seblak Gahoel" class="logo-img">
+            <h1>Seblak Gahoel</h1>
+        </div>
     </header>
-    
    <nav>
         <a href="index.php">Beranda</a>
         <a href="galeri.php">Galeri</a>
