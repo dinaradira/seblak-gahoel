@@ -46,8 +46,10 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo Seblak Gahoel">
-        <h1>Seblak Gahoel</h1>
+        <div class="header-brand">
+            <img src="logo.jpg" alt="Logo Seblak Gahoel" class="logo-img">
+            <h1>Seblak Gahoel</h1>
+        </div>
     </header>
     
     <nav>
@@ -65,7 +67,7 @@
             
             <!-- Tombol Interaktif WhatsApp & Instagram -->
             <div class="contact-actions">
-                <a href="https://wa.me/6281234567890?text=Halo%20Seblak%20Gahoel,%20saya%20mau%20pesan" target="_blank" class="btn-wa">
+                <a href="https://wa.me/089606445542" target="_blank" style="color: #ffca28; text-decoration: none; font-weight: bold;">
                     💬 Chat WhatsApp
                 </a>
                 <a href="https://www.instagram.com/seblakgahoelbaleendah?stkn=c2x4ZzJ4bDZmbW1n" target="_blank" class="btn-ig">

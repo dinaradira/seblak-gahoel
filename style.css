@@ -1,6 +1,5 @@
-/* --- TEMA UTAMA: Ungu Mewah & Melebar Full-Width --- */
 body {
-    background-color: #0b0714; /* Ungu gelap malam yang pekat dan elegan */
+    background-color: #0b0714;
     color: #f3f4f6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -8,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Melebar */
+/* Header Melebar dengan Logo & Judul di Kiri */
 header {
     background: linear-gradient(135deg, #2c0c30 0%, #130617 100%);
     border-bottom: 2px solid #ffca28;
@@ -19,33 +18,49 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-header img {
-    height: 50px;
-    width: 50px;
+/* Bagian Kiri Header */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo di Header (Kecil Rapi) */
+header img.logo-img, header img {
+    height: 55px !important;
+    width: 55px !important;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #ffca28;
+    box-shadow: 0 0 10px rgba(255, 202, 40, 0.4);
 }
 
+/* Teks Seblak Gahoel di Header */
 header h1 {
-    color: #ffca28;
     margin: 0;
     font-size: 26px;
-    letter-spacing: 1px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffea8a 0%, #ffca28 50%, #ffa000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.2px;
 }
 
-/* Navigasi Melebar */
+/* Navigasi Wajib di TENGAH & Rapi */
 nav {
-    background-color: #1a0822; /* Ungu tua bernuansa mewah */
-    padding: 12px 30px;
+    background-color: #1a0822;
+    padding: 14px 30px;
     display: flex;
-    gap: 25px;
+    justify-content: center; /* Dipastikan di tengah */
+    align-items: center;
+    gap: 35px;
     border-bottom: 1px solid rgba(255, 202, 40, 0.2);
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 nav a {
     color: #e5e7eb;
+    text-align: center;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
@@ -57,10 +72,10 @@ nav a:hover {
     text-shadow: 0 0 8px rgba(255, 202, 40, 0.5);
 }
 
-/* Container Melebar Maksimal (Full-Width Rasa Modern) */
+/* Container Utama */
 .container {
     width: 95%;
-    max-width: 1400px; /* Lebar maksimal diperbesar biar kelihatan megah */
+    max-width: 1400px;
     margin: 30px auto;
     box-sizing: border-box;
 }
@@ -73,9 +88,31 @@ nav a:hover {
     padding: 30px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
+    margin-bottom: 20px;
 }
 
-/* Tabel Keren & Responsif */
+/* KUNCI UTAMA: Supaya foto di Galeri atau di dalam konten TIDAK KEREKAM/MELAR RAKSASA */
+.container img, .card img, img.galeri-foto {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 250px; /* Batasi tinggi maksimal foto galeri biar tidak raksasa */
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 202, 40, 0.2);
+}
+
+/* Footer di Tengah */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #120617;
+    margin-top: 40px;
+}
+
+/* Tabel Keren */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -92,11 +129,57 @@ th, td {
 }
 
 th {
-    background-color: #3b1046; /* Ungu tegas untuk kepala tabel */
+    background-color: #3b1046;
     color: #ffca28;
     font-weight: bold;
 }
 
 tr:hover {
     background-color: rgba(255, 202, 40, 0.05);
+}
+
+/* --- WARNA UNGU SEGAR, MODERN & ELEGAN --- */
+
+body {
+    background-color: #120524 !important; /* Ungu gelap malam yang kontras & mewah */
+}
+
+header {
+    background: linear-gradient(135deg, #5b1387 0%, #8A2BE2 100%) !important; /* Ungu segar terang */
+}
+
+nav {
+    background-color: #3b0d5c !important;
+    border-bottom: 2px solid rgba(255, 202, 40, 0.5) !important;
+}
+
+.card {
+    background: linear-gradient(145deg, rgba(138, 43, 226, 0.25), rgba(59, 13, 92, 0.45)) !important;
+    border: 1px solid rgba(255, 202, 40, 0.4) !important;
+}
+
+.card-beranda {
+    background: linear-gradient(rgba(59, 13, 92, 0.8), rgba(18, 5, 36, 0.85)), url('bg-seblak.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+th {
+    background-color: #6a1b9a !important;
+}
+
+footer {
+    background: #0d031c !important;
+}
+
+/* --- PERBAIKAN WARNA HEADER ATAS AGAR LEBIH KLOP --- */
+
+header {
+    background: linear-gradient(135deg, #3d1059 0%, #682294 100%) !important;
+    border-bottom: 2px solid rgba(255, 202, 40, 0.6) !important;
+}
+
+nav {
+    background-color: #2b0b40 !important;
+    border-bottom: 2px solid rgba(255, 202, 40, 0.4) !important;
 }

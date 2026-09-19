@@ -8,8 +8,10 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo Seblak Gahoel">
-        <h1>Seblak Gahoel</h1>
+        <div class="header-brand">
+            <img src="logo.jpg" alt="Logo Seblak Gahoel" class="logo-img">
+            <h1>Seblak Gahoel</h1>
+        </div>
     </header>
    <nav>
         <a href="index.php">Beranda</a>
@@ -21,7 +23,6 @@
         <div class="card" style="text-align: center;">
             <h2>Selamat Datang di Seblak Gahoel 🔥</h2>
             <p>Pusat jajanan seblak hits dengan berbagai macam varian toping terlengkap dan rasa yang mantap!</p>
-            <img src="logo.jpg" alt="Logo" style="width: 180px; height: 180px; border-radius: 50%; border: 3px solid #4a154b; margin-top: 15px; object-fit: cover;">
         </div>
         <div class="card">
             <h3>Sejarah Singkat Seblak Gahoel</h3>
