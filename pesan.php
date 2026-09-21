@@ -1,7 +1,6 @@
 <?php 
 include 'koneksi.php'; 
 
-// Proses jika tombol tambah diklik
 if(isset($_POST['tambah_menu'])){
     $nama_pemesan = mysqli_real_escape_string($conn, $_POST['nama_pemesan']);
     $level_pedas = mysqli_real_escape_string($conn, $_POST['level_pedas']);
