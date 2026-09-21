@@ -63,7 +63,7 @@
         <div class="card">
             <h3>Informasi Alamat & Kontak Resmi</h3>
             <p>📍 <b>Alamat Outlet:</b> Jl. Raya Kuliner Gahoel No. 45, Bandung, Jawa Barat</p>
-            <p>⏰ <b>Jam Buka:</b> Setiap Hari Pukul 13.00 - 21.00 WIB</p>
+            <p>⏰ <b>Jam Buka:</b> Setiap Hari Pukul 09.00 - 20.30 WIB</p>
             
             <!-- Tombol Interaktif WhatsApp & Instagram -->
             <div class="contact-actions">

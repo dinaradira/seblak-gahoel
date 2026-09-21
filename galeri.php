@@ -200,5 +200,11 @@
             document.getElementById('imgModal').style.display = 'none';
         }
     </script>
+
+    <footer>
+    <p>&copy; 2026 Seblak Gahoel. All rights reserved.</p>
+    <p>Jam Buka: Senin - Sabtu (09.00 - 20.30) | Minggu: Tutup</p>
+</footer>
+
 </body>
 </html>
