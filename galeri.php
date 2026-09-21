@@ -148,23 +148,22 @@
                 <p>Intip keseruan kedai kami, racikan bumbu khas, hingga momen bahagia para pelanggan setia!</p>
             </div>
 
-            <!-- Grid 12 Foto -->
+            <!-- Grid 12 Foto Sesuai Urutan Permintaan -->
             <div class="gallery-grid">
                 <?php
-                // Daftar 12 data foto dan keterangan galeri
                 $galeri_data = [
-                    ["img" => "img/galeri1.jpg", "badge" => "Suasana", "judul" => "Suasana Kedai Utama", "desc" => "Ramai dikunjungi pencinta seblak setiap hari."],
-                    ["img" => "img/galeri2.jpg", "badge" => "Menu Andalan", "judul" => "Seblak Kuah Pedas Komplit", "desc" => "Topping melimpah dengan kuah merah membara."],
-                    ["img" => "img/galeri3.jpg", "badge" => "Testimoni", "judul" => "Pelanggan Setia Level 5", "desc" => "\"Pedasnya bikin ketagihan, nggak pernah bosan!\""],
-                    ["img" => "img/galeri4.jpg", "badge" => "Legendaris", "judul" => "Cilok Buatan Rumah", "desc" => "Resep rahasia turun-temurun sejak 15 tahun lalu."],
-                    ["img" => "img/galeri5.jpg", "badge" => "Spesial", "judul" => "Karedok Segar Autentik", "desc" => "Sayuran segar pilihan dengan bumbu kacang kental."],
-                    ["img" => "img/galeri6.jpg", "badge" => "Dapur", "judul" => "Proses Peracikan Fresh", "desc" => "Dimasak langsung mendadak sesuai pesanan."],
-                    ["img" => "img/galeri7.jpg", "badge" => "Testimoni", "judul" => "Seru-seruan Bareng Sahabat", "desc" => "\"Tempat nongkrong kuliner pedas paling hits!\""],
-                    ["img" => "img/galeri8.jpg", "badge" => "Varian", "judul" => "Aneka Kerupuk Unik", "desc" => "Pilihan kerupuk renyah terlengkap se-kota."],
-                    ["img" => "img/galeri9.jpg", "badge" => "Suasana", "judul" => "Suasana Malam Gahoel", "desc" => "Selalu ramai dipadati pemburu kuliner malam."],
-                    ["img" => "img/galeri10.jpg", "badge" => "Signature", "judul" => "Sajian Karamel Spesial", "desc" => "Sentuhan rasa manis gurih penutup yang pas."],
-                    ["img" => "img/galeri11.jpg", "badge" => "Dokumentasi", "judul" => "Keseruan Tim Dapur", "desc" => "Kompak menyajikan rasa terbaik untuk pelanggan."],
-                    ["img" => "img/galeri12.jpg", "badge" => "Favorit", "judul" => "Paket Spesial Gahoel", "desc" => "Porsi puas harga pas untuk dinikmati bersama."]
+                    ["img" => "img/galeri1.jpg", "badge" => "Menu 1", "judul" => "Cilok dengan Cabai", "desc" => "Kenyalnya cilok berpadu dengan ulekan cabai segar yang super pedas."],
+                    ["img" => "img/galeri2.jpg", "badge" => "Menu 2", "judul" => "Seblak Ceker", "desc" => "Ceker empuk meresap bumbu kuah pedas gurih khas Gahoel."],
+                    ["img" => "img/galeri3.jpg", "badge" => "Menu 3", "judul" => "Aneka Lobster", "desc" => "Topping lobster segar berukuran besar untuk sensasi makan mewah."],
+                    ["img" => "img/galeri4.jpg", "badge" => "Menu 4", "judul" => "Seblak Jadul", "desc" => "Resep otentik kerupuk basah bumbu kencur ala rumahan yang ngangenin."],
+                    ["img" => "img/galeri5.jpg", "badge" => "Menu 5", "judul" => "Seafood", "desc" => "Pilihan aneka isian seafood laut segar pilihan berkualitas."],
+                    ["img" => "img/galeri6.jpg", "badge" => "Menu 6", "judul" => "Aneka Macam Seblak", "desc" => "Berbagai variasi isian lengkap siap memanjakan lidah pencinta pedas."],
+                    ["img" => "img/galeri7.jpg", "badge" => "Menu 7", "judul" => "Lobster", "desc" => "Daging lobster juicy dengan limpahan kuah merah membara."],
+                    ["img" => "img/galeri8.jpg", "badge" => "Menu 8", "judul" => "Seblak Andalan", "desc" => "Menu favorit yang paling sering diburu dan dipesan pelanggan setiap hari."],
+                    ["img" => "img/galeri9.jpg", "badge" => "Menu 9", "judul" => "Seafood", "desc" => "Kombinasi sempurna kuah pedas gurih dengan aneka hidangan laut."],
+                    ["img" => "img/galeri10.jpg", "badge" => "Menu 10", "judul" => "Seblak Menu Andalan", "desc" => "Racikan spesial terlaris yang wajib kamu coba saat berkunjung."],
+                    ["img" => "img/galeri11.jpg", "badge" => "Menu 11", "judul" => "Racikan Spesial Seblak Gahoel", "desc" => "Proses pengolahan bumbu rahasia dapur yang higienis dan konsisten."],
+                    ["img" => "img/galeri12.jpg", "badge" => "Menu 12", "judul" => "Seblak Andalan", "desc" => "Porsi spesial dengan bumbu khas Gahoel yang bikin ketagihan."]
                 ];
 
                 foreach($galeri_data as $g) {
@@ -202,9 +201,8 @@
     </script>
 
     <footer>
-    <p>&copy; 2026 Seblak Gahoel. All rights reserved.</p>
-    <p>Jam Buka: Senin - Sabtu (09.00 - 20.30) | Minggu: Tutup</p>
-</footer>
-
+        <p>&copy; 2026 Seblak Gahoel. All rights reserved.</p>
+        <p>Jam Buka: Senin - Sabtu (09.00 - 20.30) | Minggu: Tutup</p>
+    </footer>
 </body>
 </html>
